@@ -11,8 +11,8 @@ int main(int argc, char *argv[])
 
     QtWebEngine::initialize();
 
-    QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+//    QQmlApplicationEngine engine;
+//    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
     EchoServer *server = new EchoServer(1234, true);
     QObject::connect(server, &EchoServer::closed, &app, &QGuiApplication::quit);
     return app.exec();

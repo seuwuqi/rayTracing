@@ -22,6 +22,7 @@ EchoServer::EchoServer(quint16 port, bool debug, QObject *parent) :
     }
     updatemapMap();
 }
+
 //! [constructor]
 
 EchoServer::~EchoServer()
