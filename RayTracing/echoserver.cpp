@@ -50,7 +50,10 @@ void EchoServer::processTextMessage(QString message)
     if (m_debug)
         qDebug() << "Message received:" << message;
     if (pClient) {
-        pClient->sendTextMessage(message);
+        QJsonObject qjss=QJsonObject::fromVariantMap(mapMap);
+        QJsonDocument doc(qjss);
+        QString strJson(doc.toJson(QJsonDocument::Compact));
+        pClient->sendTextMessage(strJson);
     }
 }
 //! [processTextMessage]
@@ -86,24 +89,28 @@ void EchoServer::updatemapMap(){
     fileManager->readShpFile(filePoint);
     filePoint->uniformlize(50,50);
     Scene *scene = new Scene(filePoint->allPointList, filePoint->index);
-    for(int i=0;i<scene->objList.size();i++){//将建筑循环装入map
+    QJsonObject qjs;
+    for(int i=0;i<scene->objList.size();i++){
         QMap<QString,QVariant> myMap;
         QList<QVariant> posList;
-        for(int j=0; j<scene->objList[i]->pointList.size(); j++){//将一个建筑物的坐标点循环装入Qlist容器
-            QPointF qf(scene->objList[i]->pointList[j]->x,scene->objList[i]->pointList[j]->y);
-            QVariant a(qf);
-            posList.append(qf);
+        for(int j=0;j<scene->objList[i]->pointList.size();j++){
+            QList<QVariant> tempList;
+            tempList.append(QVariant(scene->objList[i]->pointList[j]->x));
+            tempList.append(QVariant(scene->objList[i]->pointList[j]->y));
+            //QPointF qf(scene->objList[i]->pointList[j]->x,scene->objList[i]->pointList[j]->y);
+            posList.append(QVariant(tempList));
         }
         QVariant xyL(posList);
-        myMap.insert("xy",xyL);
-        qDebug()<<QVariant(posList);
-//        myMap.insert("z",QVariant(scene->objList[i]->z));
-        mapMap.insert(QString(i),QVariant(myMap));
+        myMap.insert(QString("xy"),xyL);
+//        myMap.key(
+//        qDebug()<<QVariant(posList);
+        myMap.insert(QString("z"),QVariant(scene->objList[i]->z));
+//        qDebug()<<QJsonObject::fromVariantMap(myMap);
+        mapMap.insert(QString::number(i,10),QVariant(myMap));
     }
-    qDebug()<<"mapMap size is "<<mapMap.size();
-    QJsonObject qjss=QJsonObject::fromVariantMap(mapMap);
-    QJsonDocument doc(qjss);
-    QString strJson(doc.toJson(QJsonDocument::Compact));
-
-    qDebug()<<"QJsonObject size is "<<strJson.size();
+//    qDebug()<<"mapMap size is "<<mapMap.size();
+//    QJsonObject qjss=QJsonObject::fromVariantMap(mapMap);
+//    QJsonDocument doc(qjss);
+//    QString strJson(doc.toJson(QJsonDocument::Compact));
+//    qDebug()<<"QJsonObject size is "<<strJson.size();
 }
