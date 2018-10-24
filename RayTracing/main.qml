@@ -7,6 +7,6 @@ Window {
     visibility: Window.Maximized
     WebEngineView {
         anchors.fill: parent
-        url: "file:///E:/program/html/new/html/echoclient.html"
+        url: "qrc:/index.html"
     }
 }

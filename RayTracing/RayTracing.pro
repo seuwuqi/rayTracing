@@ -14,7 +14,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    echoserver.cpp
+    echoserver.cpp \
+    backend.cpp \
+    FilePoint.cpp \
+    Point.cpp
 
 RESOURCES += qml.qrc
 
@@ -30,4 +33,14 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    echoserver.h
+    echoserver.h \
+    backend.h \
+    boundrect.h \
+    Edge.h \
+    FileManager.h \
+    FilePoint.h \
+    kdtree.h \
+    MyObject.h \
+    node.h \
+    Point.h \
+    Scene.h
