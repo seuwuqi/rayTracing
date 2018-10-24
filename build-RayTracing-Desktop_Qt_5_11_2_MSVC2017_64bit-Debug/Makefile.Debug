@@ -296,6 +296,49 @@ debug\moc_echoserver.cpp: H:\Qt\5.11.2\msvc2017_64\include\QtCore\QObject \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qobject_impl.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QList \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QByteArray \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QVariant \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qvariant.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qmap.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qdebug.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qhash.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qtextstream.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qiodevice.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qlocale.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qshareddata.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qvector.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qpoint.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qset.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qcontiguouscache.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qsharedpointer.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qsharedpointer_impl.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QMap \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\QList \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qevent.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qtguiglobal.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qtgui-config.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qwindowdefs.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qwindowdefs_win.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qregion.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qrect.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qmargins.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qsize.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qdatastream.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qkeysequence.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qurl.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qurlquery.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qfile.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qfiledevice.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qvector2d.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qtouchdevice.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QPointF \
+		..\RayTracing\FileManager.h \
+		..\RayTracing\FilePoint.h \
+		..\RayTracing\Point.h \
+		..\RayTracing\Scene.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QDebug \
+		..\RayTracing\MyObject.h \
+		..\RayTracing\Edge.h \
+		..\RayTracing\boundrect.h \
 		..\RayTracing\echoserver.h \
 		debug\moc_predefs.h \
 		H:\Qt\5.11.2\msvc2017_64\bin\moc.exe
@@ -490,18 +533,32 @@ debug\main.obj: ..\RayTracing\main.cpp H:\Qt\5.11.2\msvc2017_64\include\QtGui\QG
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qmetaobject.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtQml\qqmlerror.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtWebEngine\qtwebengineglobal.h \
+		..\RayTracing\echoserver.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QObject \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QList \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QByteArray \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QVariant \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QMap \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\QList \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qevent.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qregion.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qrect.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qmargins.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qdatastream.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qkeysequence.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qfile.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qfiledevice.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qvector2d.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qtouchdevice.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QPointF \
 		..\RayTracing\FileManager.h \
 		..\RayTracing\FilePoint.h \
 		..\RayTracing\Point.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QObject \
 		..\RayTracing\Scene.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QDebug \
 		..\RayTracing\MyObject.h \
 		..\RayTracing\Edge.h \
-		..\RayTracing\boundrect.h \
-		..\RayTracing\echoserver.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QList \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QByteArray
+		..\RayTracing\boundrect.h
 
 debug\echoserver.obj: ..\RayTracing\echoserver.cpp ..\RayTracing\echoserver.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QObject \
@@ -556,6 +613,49 @@ debug\echoserver.obj: ..\RayTracing\echoserver.cpp ..\RayTracing\echoserver.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qobject_impl.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QList \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QByteArray \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QVariant \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qvariant.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qmap.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qdebug.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qhash.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qtextstream.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qiodevice.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qlocale.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qshareddata.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qvector.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qpoint.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qset.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qcontiguouscache.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qsharedpointer.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qsharedpointer_impl.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QMap \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\QList \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qevent.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qtguiglobal.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qtgui-config.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qwindowdefs.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qwindowdefs_win.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qregion.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qrect.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qmargins.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qsize.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qdatastream.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qkeysequence.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qurl.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qurlquery.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qfile.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qfiledevice.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qvector2d.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtGui\qtouchdevice.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QPointF \
+		..\RayTracing\FileManager.h \
+		..\RayTracing\FilePoint.h \
+		..\RayTracing\Point.h \
+		..\RayTracing\Scene.h \
+		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QDebug \
+		..\RayTracing\MyObject.h \
+		..\RayTracing\Edge.h \
+		..\RayTracing\boundrect.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtWebSockets\qwebsocketserver.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtWebSockets\qwebsockets_global.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtWebSockets\qwebsocketprotocol.h \
@@ -564,21 +664,7 @@ debug\echoserver.obj: ..\RayTracing\echoserver.cpp ..\RayTracing\echoserver.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\qhostaddress.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\qtnetworkglobal.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\qtnetwork-config.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qshareddata.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qhash.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\qabstractsocket.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qiodevice.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qdebug.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qmap.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qtextstream.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qlocale.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qvariant.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qvector.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qpoint.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qset.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qcontiguouscache.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qsharedpointer.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qsharedpointer_impl.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\QSslConfiguration \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\qsslconfiguration.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\qsslsocket.h \
@@ -592,16 +678,12 @@ debug\echoserver.obj: ..\RayTracing\echoserver.cpp ..\RayTracing\echoserver.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\QSslError \
 		H:\Qt\5.11.2\msvc2017_64\include\QtWebSockets\qwebsocket.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QUrl \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qurl.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\qurlquery.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\QAbstractSocket \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\QNetworkRequest \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\qnetworkrequest.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QSharedDataPointer \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QVariant \
 		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\QNetworkProxy \
-		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\qnetworkproxy.h \
-		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QDebug
+		H:\Qt\5.11.2\msvc2017_64\include\QtNetwork\qnetworkproxy.h
 
 debug\backend.obj: ..\RayTracing\backend.cpp ..\RayTracing\backend.h \
 		H:\Qt\5.11.2\msvc2017_64\include\QtCore\QDebug \

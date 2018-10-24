@@ -5,8 +5,8 @@
 class FileManager
 {
 private:
-    const char* shpName = "qrc:/BUILDING_nanjing.shp";
-    const char* dbfName = "qrc:/BUILDING_nanjing.dbf";
+    const char* shpName = "E:\\program\\qt\\GitHub\\rayTracing-1\\RayTracing\\BUILDING_nanjing.shp";
+    const char* dbfName = "E:\\program\\qt\\GitHub\\rayTracing-1\\RayTracing\\BUILDING_nanjing.dbf";
 public:
 	FileManager() {}
 	~FileManager() {}
@@ -88,7 +88,7 @@ public:
 		}
 	}
 	void readDbfFile(FilePoint *filePoint) {
-		FILE* dbfFile = fopen(dbfName, "r");
+        FILE* dbfFile = fopen(dbfName, "r");
 		if (dbfFile == NULL)
 		{
 			//cout << "fail to open the file!" << endl;

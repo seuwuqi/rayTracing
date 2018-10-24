@@ -4,6 +4,14 @@
 #include <QtCore/QObject>
 #include <QtCore/QList>
 #include <QtCore/QByteArray>
+#include <QtCore/QVariant>
+#include <QMap>
+#include <QList>
+#include <QPointF>
+#include "FileManager.h"
+#include "FilePoint.h"
+#include "Scene.h"
+#include <QVariant>
 
 QT_FORWARD_DECLARE_CLASS(QWebSocketServer)
 QT_FORWARD_DECLARE_CLASS(QWebSocket)
@@ -12,6 +20,8 @@ class EchoServer : public QObject
 {
     Q_OBJECT
 public:
+    QMap<QString,QVariant> mapMap;
+// {"0":[{}]}
     explicit EchoServer(quint16 port, bool debug = false, QObject *parent = nullptr);
     ~EchoServer();
 
@@ -23,7 +33,7 @@ private Q_SLOTS:
     void processTextMessage(QString message);
     void processBinaryMessage(QByteArray message);
     void socketDisconnected();
-
+    void updatemapMap();
 private:
     QWebSocketServer *m_pWebSocketServer;
     QList<QWebSocket *> m_clients;
