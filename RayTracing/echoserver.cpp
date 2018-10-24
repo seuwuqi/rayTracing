@@ -94,19 +94,23 @@ void EchoServer::updatemapMap(){
         QMap<QString,QVariant> myMap;
         QList<QVariant> posList;
         for(int j=0;j<scene->objList[i]->pointList.size();j++){
-            QList<QVariant> tempList;
-            tempList.append(QVariant(scene->objList[i]->pointList[j]->x));
-            tempList.append(QVariant(scene->objList[i]->pointList[j]->y));
+            QMap<QString,QVariant> tempMap;
+            tempMap.insert(QString("x"),QVariant(scene->objList[i]->pointList[j]->x));
+            tempMap.insert(QString("y"),QVariant(scene->objList[i]->pointList[j]->y));
+            tempMap.insert(QString("z"),QVariant(scene->objList[i]->pointList[j]->z));
+
+//            tempList.append(QVariant(scene->objList[i]->pointList[j]->x));
+//            tempList.append(QVariant(scene->objList[i]->pointList[j]->y));
             //QPointF qf(scene->objList[i]->pointList[j]->x,scene->objList[i]->pointList[j]->y);
-            posList.append(QVariant(tempList));
+            posList.append(QVariant(tempMap));
         }
-        QVariant xyL(posList);
-        myMap.insert(QString("xy"),xyL);
+//        QVariant xyL(posList);
+//        myMap.insert(QString("xy"),xyL);
 //        myMap.key(
 //        qDebug()<<QVariant(posList);
-        myMap.insert(QString("z"),QVariant(scene->objList[i]->z));
+//        myMap.insert(QString("z"),QVariant(scene->objList[i]->z));
 //        qDebug()<<QJsonObject::fromVariantMap(myMap);
-        mapMap.insert(QString::number(i,10),QVariant(myMap));
+        mapMap.insert(QString::number(i,10),QVariant(posList));
     }
 //    qDebug()<<"mapMap size is "<<mapMap.size();
 //    QJsonObject qjss=QJsonObject::fromVariantMap(mapMap);
