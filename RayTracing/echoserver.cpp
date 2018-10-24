@@ -3,7 +3,7 @@
 #include "QtWebSockets/qwebsocket.h"
 #include <QtCore/QDebug>
 #include <QJsonObject>
-
+#include <QJsonDocument>
 QT_USE_NAMESPACE
 
 //! [constructor]
@@ -86,10 +86,10 @@ void EchoServer::updatemapMap(){
     fileManager->readShpFile(filePoint);
     filePoint->uniformlize(50,50);
     Scene *scene = new Scene(filePoint->allPointList, filePoint->index);
-    for(int i=0;i<scene->objList.size();i++){
+    for(int i=0;i<scene->objList.size();i++){//将建筑循环装入map
         QMap<QString,QVariant> myMap;
         QList<QVariant> posList;
-        for(int j=0;j<scene->objList[i]->pointList.size();j++){
+        for(int j=0; j<scene->objList[i]->pointList.size(); j++){//将一个建筑物的坐标点循环装入Qlist容器
             QPointF qf(scene->objList[i]->pointList[j]->x,scene->objList[i]->pointList[j]->y);
             QVariant a(qf);
             posList.append(qf);
@@ -101,7 +101,9 @@ void EchoServer::updatemapMap(){
         mapMap.insert(QString(i),QVariant(myMap));
     }
     qDebug()<<"mapMap size is "<<mapMap.size();
-    QJsonObject qjs;
-    QJsonObject qjss=qjs.fromVariantMap(mapMap);
-    qDebug()<<"QJsonObject size is "<<qjss;
+    QJsonObject qjss=QJsonObject::fromVariantMap(mapMap);
+    QJsonDocument doc(qjss);
+    QString strJson(doc.toJson(QJsonDocument::Compact));
+
+    qDebug()<<"QJsonObject size is "<<strJson.size();
 }

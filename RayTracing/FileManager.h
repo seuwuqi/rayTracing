@@ -5,8 +5,8 @@
 class FileManager
 {
 private:
-    const char* shpName = "E:\\program\\qt\\GitHub\\rayTracing-1\\RayTracing\\BUILDING_nanjing.shp";
-    const char* dbfName = "E:\\program\\qt\\GitHub\\rayTracing-1\\RayTracing\\BUILDING_nanjing.dbf";
+    const char* shpName = "E:\\QT5_11_1\\rayTracing\\rayTracing\\RayTracing\\BUILDING_nanjing.shp";
+    const char* dbfName = "E:\\QT5_11_1\\rayTracing\\rayTracing\\RayTracing\\BUILDING_nanjing.dbf";
 public:
 	FileManager() {}
 	~FileManager() {}
